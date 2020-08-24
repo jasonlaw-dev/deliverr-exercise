@@ -1,7 +1,7 @@
 # Deliverr Inventory Allocator Exercise
 
 ## Assumptions
-- The allocator will always allocate from the first warehouse until the order is fulfilled, i.e. it will not attempt to find a warehouse with all the item counts.
+- The allocator will always allocate from the warehouses in sequence until the order is fulfilled, i.e. it will not attempt to find a single warehouse with all the item counts.
 - Each item type of the order is allocated individually, i.e. the allocator does not guarantee that fewest warehouses are chosen.
 - No item will be shipped if one or more items is out of stock.
 - No item will be shipped if the order contains items of non-positive count.
