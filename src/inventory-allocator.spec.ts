@@ -68,13 +68,13 @@ const testCases: TestCase[] = [
     warehouses: [
       { name: 'owd', inventory: { apple: 7 } },
       { name: 'dm', inventory: { apple: 5, pineapple: 7 } },
-      { name: 'jfk', inventory: { pineapple: 10 } },
+      { name: 'jfk', inventory: { pineapple: 10, orange: 5 } },
     ],
-    order: { apple: 10, pineapple: 15 },
+    order: { orange: 5, apple: 10, pineapple: 15 },
     expectedOutput: [
       { owd: { apple: 7 } },
       { dm: { apple: 3, pineapple: 7 } },
-      { jfk: { pineapple: 8 } },
+      { jfk: { pineapple: 8, orange: 5 } },
     ],
   },
 ];
