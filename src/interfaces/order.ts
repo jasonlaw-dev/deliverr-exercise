@@ -1,3 +1,4 @@
-export interface Order {
-  [key: string]: number;
+import { ItemCounts } from './item-counts';
+
+export interface Order extends ItemCounts {
 }

@@ -1,6 +1,6 @@
+import { ItemCounts } from './item-counts';
+
 export interface Warehouse {
   name: string;
-  inventory: {
-    [key: string]: number;
-  };
+  inventory: ItemCounts;
 }
